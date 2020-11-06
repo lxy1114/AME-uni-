@@ -1,0 +1,48 @@
+.ver-title{
+	color: #333333;
+	font-weight: bold;
+	line-height: 32rpx;
+	margin: 30rpx 0rpx 30rpx 20rpx;
+	position: relative;
+}
+.ver-title::before{
+	content: '';
+	display: block;
+	width: 4rpx;
+	height: 100%;
+	background: $uni-color-primary;
+	border-radius: 6rpx;
+	position: absolute;
+	top: 0rpx;
+	left: -20rpx;
+}
+.hor-title{
+	color: #333333;
+	font-weight: bold;
+	line-height: 32rpx;
+	margin: 30rpx 0rpx;
+	text-align: center;
+	position: relative;
+}
+.hor-title::before{
+	content: '';
+	display: block;
+	width: 35%;
+	height: 2rpx;
+	background: $uni-border-color;
+	border-radius: 6rpx;
+	position: absolute;
+	top: 50%;
+	left: 2%;
+}
+.hor-title::after{
+	content: '';
+	display: block;
+	width: 35%;
+	height: 2rpx;
+	background: $uni-border-color;
+	border-radius: 6rpx;
+	position: absolute;
+	top: 50%;
+	right: 2%;
+}
