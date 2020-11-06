@@ -1,5 +1,5 @@
 <template>
-	<view class="input">
+	<view class="input" ref="input">
 		<view class="input-title">
 			<view class="request" v-if="request">*</view>
 			{{title}}
@@ -74,7 +74,7 @@ export default {
 		//必填项
 		request: Boolean,
 		//校验类型
-		test: String,
+		reg: String,
 		//文本域
 		area: Boolean,
 		//最大输入长度
@@ -83,13 +83,16 @@ export default {
 			default: '-1'
 		},
 		//字数统计
-		count: Boolean
+		count: Boolean,
+		//是否校验
+		test: Boolean
 	},
 	data() {
 		return {
 			value: '',
 			msg: '',
-			textarea: ''
+			textarea: '',
+			userName: ''
 		}
 	},
 	methods: {
@@ -97,11 +100,14 @@ export default {
 			this.$emit('click')
 		},
 		getTest() {
-			this.msg = this.$utils.test(this.request,this.test,this.value,this.title)
+			//request,reg,test任意一项为true都会开启校验
+			if(!this.request && !this.reg && !this.test) return
+			this.msg = this.$utils.test(this.request,this.reg,this.value,this.title,this.test)
+			this.$emit('getTest')
 		},
 	},
-	created() {
-		console.log(this.request)
+	mounted() {
+		console.log(this.$props)
 	}
 }
 </script>

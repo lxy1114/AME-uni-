@@ -11,8 +11,11 @@
 <script>
 export default {
 	props: {
+		//标题
 		title: String,
+		//内容
 		text: String,
+		//是否显示右箭头
 		more: Boolean
 	},
 	data() {

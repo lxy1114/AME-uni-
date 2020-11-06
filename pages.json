@@ -23,6 +23,36 @@
 			"style": {
 				"navigationBarTitleText": "输入框"
 			}
+		},
+		{
+			"path": "pages/radio/radio",
+			"style": {
+				"navigationBarTitleText": "单选框"
+			}
+		},
+		{
+			"path": "pages/check/check",
+			"style": {
+				"navigationBarTitleText": "复选框"
+			}
+		},
+		{
+			"path": "pages/search/search",
+			"style": {
+				"navigationBarTitleText": "搜索框"
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/city/city",
+			"style": {
+				"navigationBarTitleText": "城市选择"
+			}
 		}
 	],
 	"globalStyle": {

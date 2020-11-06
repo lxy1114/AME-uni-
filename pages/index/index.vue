@@ -7,8 +7,16 @@
 		</view>
 		<view class="ver-title">表单组件</view>
 		<view class="card">
+			<ame-cell title="单选框" more @click="goDetail('/radio')"></ame-cell>
+			<ame-cell title="复选框" more @click="goDetail('/check')"></ame-cell>
 			<ame-cell title="输入框" more @click="goDetail('/input')"></ame-cell>
+			<ame-cell title="搜索框" more @click="goDetail('/search')"></ame-cell>
 			<ame-cell title="表单" more @click="goDetail('/form')"></ame-cell>
+		</view>
+		<view class="ver-title">模板</view>
+		<view class="card">
+			<ame-cell title="登录" more @click="goDetail('/login')"></ame-cell>
+			<ame-cell title="城市选择" more @click="goDetail('/city')"></ame-cell>
 		</view>
 	</view>
 </template>

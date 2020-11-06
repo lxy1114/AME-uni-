@@ -17,7 +17,7 @@
 		<view class="hor-title">密码</view>
 		<view class="card">
 			<ame-input title="密码" placeholder="请输入密码" more password></ame-input>
-			<ame-input title="密码" placeholder="请输入密码" more :password="password" icon="" @click="password = !password" :icon="icon"></ame-input>
+			<ame-input title="密码" placeholder="请输入密码" more :password="password" @click="password = !password" :icon="icon"></ame-input>
 		</view>
 		<view class="hor-title">对齐方式</view>
 		<view class="card">
@@ -29,11 +29,11 @@
 		</view>
 		<view class="hor-title">校验</view>
 		<view class="card">
-			<ame-input title="中文" placeholder="请输入中文" more test="text"></ame-input>
-			<ame-input title="数字" placeholder="请输入数字" more request test="number"></ame-input>
-			<ame-input title="手机号" placeholder="请输入手机号" more request test="phone"></ame-input>
-			<ame-input title="身份证号" placeholder="请输入身份证号" more request test="idcard"></ame-input>
-			<ame-input title="银行卡号" placeholder="请输入银行卡号" more request test="bankcard"></ame-input>
+			<ame-input title="中文" placeholder="请输入中文" more reg="text" test></ame-input>
+			<ame-input title="数字" placeholder="请输入数字" more request reg="number" test></ame-input>
+			<ame-input title="手机号" placeholder="请输入手机号" more request reg="phone" test></ame-input>
+			<ame-input title="身份证号" placeholder="请输入身份证号" more request reg="idcard" test></ame-input>
+			<ame-input title="银行卡号" placeholder="请输入银行卡号" more request reg="bankcard" test></ame-input>
 		</view>
 		<view class="hor-title">文本域</view>
 		<view class="card">
@@ -61,7 +61,8 @@ export default {
 					{name: 'left',exalpin: '对齐方式',type: 'Booolean',default: 'right'},
 					{name: 'code',exalpin: '验证码',type: 'Booolean',default: 'false'},
 					{name: 'request',exalpin: '必填',type: 'Booolean',default: 'false'},
-					{name: 'test',exalpin: '校验类型',type: 'String',default: ''},
+					{name: 'reg',exalpin: '校验类型',type: 'String',default: ''},
+					{name: 'test',exalpin: '是否校验',type: 'Boolean',default: 'false'},
 					{name: 'area',exalpin: '文本域',type: 'Booolean',default: 'false'},
 					{name: 'maxlength',exalpin: '最大输入长度',type: 'String',default: '-1'},
 					{name: 'count',exalpin: '字数统计',type: 'Booolean',default: 'false'}],

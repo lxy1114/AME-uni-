@@ -9,8 +9,8 @@ export default {
 			url: '/pages'+url+url
 		})
 	},
-	test(require,type,value,text) {
-		if(require && !value){
+	test(require,type,value,text,test) {
+		if((require && !value) || (test && !value)){
 			return '请输入'+text
 		}
 		switch(type){

@@ -28,6 +28,7 @@
 <script>
 export default {
 	props: {
+		//参数列表
 		list: Array
 	},
 	data() {
