@@ -1,8 +1,8 @@
 <template>
 	<view class="container">
-		<view class="top">
+		<!-- <view class="top">
 			<ame-button type="text" text="查看参数" @click="show = true"></ame-button>
-		</view>
+		</view> -->
 		<ame-cell title="标题" text="内容" more></ame-cell>
 		<ame-params @getParams="show = false" v-if="show" :list="list"></ame-params>
 	</view>

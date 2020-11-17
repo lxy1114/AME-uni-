@@ -2,10 +2,10 @@
 	<view 
 		class="container" 
 		:style="show ? 'position: fixed' : ''">
-		<view class="top">
+		<!-- <view class="top">
 			<ame-button type="text" text="查看参数" @click="show = true"></ame-button>
-		</view>
-		<!-- <view class="hor-title">基础按钮</view>
+		</view> -->
+		<view class="hor-title">基础按钮</view>
 		<ame-button></ame-button>
 		<ame-button type="success"></ame-button>
 		<ame-button type="info"></ame-button>
@@ -34,7 +34,7 @@
 		<ame-button width="150" height="36"></ame-button>
 		<view class="hor-title">禁用状态</view>
 		<ame-button disabled></ame-button>
-		<ame-button simple disabled></ame-button> -->
+		<ame-button simple disabled></ame-button>
 		<view class="hor-title">自定义颜色</view>
 		<ame-button bgColor="red"></ame-button>
 		<ame-params :list="list" v-if="show" @getParams="show = false"></ame-params>

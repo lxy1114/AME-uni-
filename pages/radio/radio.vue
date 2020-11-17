@@ -1,8 +1,8 @@
 <template>
 	<view class="container">
-		<view class="top">
+		<!-- <view class="top">
 			<ame-button type="text" text="查看参数" @click="show = true"></ame-button>
-		</view>
+		</view> -->
 		<view class="hor-title">基础用法</view>
 		<ame-radio label="1" :value="value"></ame-radio>
 		<ame-radio label="2" :value="value"></ame-radio>

@@ -52,6 +52,10 @@ export default {
 	max-height: 500rpx;
 	overflow-y: scroll;
 }
+@keyframes show{
+	from{bottom: -600rpx;}
+	to{bottom: 0rpx;}
+}
 .params{
 	width: 100%;
 	max-height: 60%;
@@ -62,6 +66,7 @@ export default {
 	position: fixed;
 	bottom: 0rpx;
 	left: 0rpx;
+	animation: show 0.4s;
 	&-title{
 		font-weight: bold;
 		margin: 20rpx 0rpx;

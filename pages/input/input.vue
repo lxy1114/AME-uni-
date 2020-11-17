@@ -2,9 +2,9 @@
 	<view 
 		class="container"
 		:style="show ? 'position: fixed' : ''">
-		<view class="top">
+		<!-- <view class="top">
 			<ame-button type="text" text="查看参数" @click="show = true"></ame-button>
-		</view>
+		</view> -->
 		<view class="hor-title">基础用法</view>
 		<view class="card">
 			<ame-input></ame-input>

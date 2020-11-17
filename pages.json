@@ -43,6 +43,42 @@
 			}
 		},
 		{
+			"path": "pages/slider/slider",
+			"style": {
+				"navigationBarTitleText": "滑块"
+			}
+		},
+		{
+			"path": "pages/number/number",
+			"style": {
+				"navigationBarTitleText": "计数器"
+			}
+		},
+		{
+			"path": "pages/score/score",
+			"style": {
+				"navigationBarTitleText": "评分"
+			}
+		},
+		{
+			"path": "pages/table/table",
+			"style": {
+				"navigationBarTitleText": "表格"
+			}
+		},
+		{
+			"path": "pages/nav/nav",
+			"style": {
+				"navigationBarTitleText": "导航"
+			}
+		},
+		{
+			"path": "pages/side/side",
+			"style": {
+				"navigationBarTitleText": "侧边栏"
+			}
+		},
+		{
 			"path": "pages/login/login",
 			"style": {
 				"navigationBarTitleText": "登录"
